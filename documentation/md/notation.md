@@ -92,7 +92,7 @@ cytoscape({
       // gives you nice debug messages if you mis-init elements
 
 
-      data: { // element data (put json serialisable dev data here)
+      data: { // element data (put JSON-serializable data here)
         id: 'n1', // mandatory (string) id for each element, assigned automatically on undefined
         parent: 'nparent', // indicates the compound node parent id; not defined => no parent
         // (`parent` can be effectively changed by `eles.move()`)
@@ -171,7 +171,7 @@ cytoscape({
 });
 ```
 
-The elements JSON may alternatively be in the following format, keyed by group:
+The elements option may alternatively be specified as an object keyed by group:
 
 ```js
 cytoscape({
